@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <h1>Фільми які варто побачити!</h1>
+        <nav>
+            <ul>
+                <li><a href="#films">Фільми</a></li>
+                <li><a href="#facts">Цікаві факти про фільми</a></li>
+                <li><a href="#contact">Зворотний зв’язок</a></li>
+                <li><a href="#opituvanya">Опитувальник</a></li>
+                <li><a href="#login">Авторизація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="films">
+            <h2>Фільми!</h2>
+            <div class="films">
+                <article class="films">
+                    <img src="img/greenmile.jpg" alt="Зелина Миля" class="small-img">
+                    <h3>Зелена Миля</h3>
+                    <p>*Коротка розповідь* “Зелена миля” — це драматичний фільм 1999 року, знятий за однойменним романом Стівена Кінга. Події відбуваються у в’язниці, де наглядач Пол Еджкомб працює у відділі смертників, який ув’язнені називають “Зелена Миля”
+                        через колір підлоги. У в’язницю потрапляє новий засуджений — Джон Коффі, величезний на зріст чоловік із надзвичайно доброю душею. Його звинувачують у страшному злочині, але поступово виявляється, що він має чудесний дар зцілення
+                        та співчуття. Фільм розкриває теми добра і зла, несправедливості, людяності та дивовижної сили милосердя. Це зворушлива історія, яка змушує замислитися про справжню цінність життя і те, що іноді чудо може бути поруч.
+                    </p>
+                </article>
+                <article class="films">
+                    <img src="img/forestgamp.jpg" alt="Форест Гамп" class="small-img">
+                    <h3>Форест Гамп</h3>
+                    <p>*Коротка розповідь*“Форест Гамп” — це американський фільм 1994 року про доброго і простодушного чоловіка на ім’я Форест. Попри розумові обмеження, він стає свідком і учасником багатьох важливих подій в історії США: служить у В’єтнамі,
+                        стає успішним бізнесменом, навіть зустрічає президентів. Його головна мрія — бути поруч із коханою Дженні. Це зворушлива історія про щирість, силу духу та те, як добра людина може змінити світ навколо себе.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="facts">
+            <h2>Цікава Інфоромація!</h2>
+            <article>
+                <h3>Зелена Миля</h3>
+                <p>*Цікаві Факти* Для зйомок сцени страти електричним стільцем створили справжню повнорозмірну копію “Олд Спаркі” (оригінального стільця з Флориди). Том Генкс відмовився від ролі у фільмі “Шосте відчуття”, щоб зіграти Пола Еджкомба в “Зеленій
+                    милі”. Фільм номінували на 4 “Оскари”, але він не отримав жодної статуетки, хоча й став культовим</p>
+            </article>
+            <article>
+                <h3>Форест Гамп</h3>
+                <p>*Цікаві Факти*Кожну сцену, де Форест біжить, Том Генкс зіграв сам — без дублерів. Голос маленького Фореста (сина головного героя) у фільмі належить справжньому сину Тома Генкса. Стрічка отримала 6 “Оскарів”, серед яких — “Найкращий фільм”
+                    та “Найкращий актор” (Том Генкс).</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Зворотний зв’язок</h2>
+            <form>
+                <label for="name">Ім’я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+
+        <section id="opituvanya">
+            <h2>Опитувальник</h2>
+            <form>
+                <label for="login">Логін:</label>
+                <input type="text" id="login" name="login" required maxlength="20">
+                <label for="survey-email">Email:</label>
+                <input type="email" id="survey-email" name="survey-email" required>
+                <label for="msg">Повідомлення:</label>
+                <textarea id="msg" name="msg"></textarea>
+                <label for="select">Виберіть варіант:</label>
+                <select id="select" name="select">
+          <option value="default" selected>Варіант 1</option>
+          <option value="2">Варіант 2</option>
+        </select>
+                <fieldset>
+                    <legend>Оберіть стать:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+                    <label><input type="radio" name="gender" value="female"> Жінка</label>
+                </fieldset>
+                <label><input type="checkbox" name="agree" required> Погоджуюсь з умовами</label>
+                <button type="submit">Відправити</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2>Авторизація</h2>
+            <form>
+                <label for="auth-email">Email:</label>
+                <input type="email" id="auth-email" name="auth-email" required placeholder="email@example.com">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required minlength="6" placeholder="Мінімум 6 символів">
+                <button type="submit">Увійти</button>
+                <button type="reset">Очистити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Гліпка</p>
+    </footer>
+</body>
+
+</html>
